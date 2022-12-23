@@ -5,5 +5,9 @@ public class Main {
         myDoctor.speciality = "Cirujano estetico";
         myDoctor.showName();
         myDoctor.showSpeciality();
+
+        Paciente myPaciente = new Paciente( "Alejandro Ching");
+                                    //Construct method
+
     }
 }

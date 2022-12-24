@@ -1,11 +1,16 @@
 public class Paciente {
-    int id;
+    static int id;
     String name;
     String description;
 
     //Comportamientos
+    Paciente() {
+        System.out.println("Creando un nuevo paciente...");
+        id++;
+    }
+
     public void showId() {
-        System.out.println(id);
+        System.out.println("El id de el o la paciente es: " + id);
     }
     public void showName() {
         System.out.println(name);
@@ -13,10 +18,6 @@ public class Paciente {
     public void showDescription() {
         System.out.println(description);
     }
-    Paciente() {
-        System.out.println("Construyendo el objeto doctor");
-    }
-    Paciente(String name) {
-        System.out.println("El nombre del paciente es: " + name);
-    }
+
+
 }

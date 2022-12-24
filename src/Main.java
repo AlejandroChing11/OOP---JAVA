@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import static ui.UIMenu.*;
+
 public class Main {
     public static void main(String[] args) {
         Doctor myDoctor = new Doctor(); //Instanciazion
@@ -8,7 +9,7 @@ public class Main {
         Doctor myDoctorAlejo = new Doctor();
         myDoctor.showId();
 
-        UIMenu.showMenu();
+        showMenu();
 
 
 

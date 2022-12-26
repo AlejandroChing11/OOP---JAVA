@@ -16,6 +16,10 @@ public class Main {
         System.out.println(myDoctor2.speciality);
 
         Paciente myPaciente = new Paciente("Alejandro Ching", "alejandroching2004@hotmail.com");
+        myPaciente.setWeight(54.7);
+        System.out.println(myPaciente.getWeight());
+        myPaciente.setHeight(30.50);
+        System.out.println(myPaciente.getHeight());
 
 
         //Paciente myPaciente2 = new Paciente(25.70, 50.50);

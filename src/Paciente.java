@@ -14,6 +14,36 @@ public class Paciente {
         this.email = email;
     };
 
+    public void setWeight(double weight) {
+        this.weight = weight;
+    };
+
+    //54.5 Kg. String
+
+    public String getWeight () {
+        return this.weight + " Kg. ";
+    };
+
+    public String getHeight () {
+        return this.height + " Mts. ";
+    };
+
+    public void setHeight (double height) {
+        this.height = height;
+    };
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        if (phoneNumber.length() > 8) {
+            System.out.println("El numero de telefono debe ser de 8 digitos maximo");
+        }else if (phoneNumber.length() == 8) {
+            this.phoneNumber = phoneNumber;
+        }
+    }
+
     //Paciente(double weight, double height){
         //this.weight = weight;
         //this.height = height;

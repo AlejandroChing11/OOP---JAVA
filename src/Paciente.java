@@ -44,6 +44,14 @@ public class Paciente {
         }
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     //Paciente(double weight, double height){
         //this.weight = weight;
         //this.height = height;

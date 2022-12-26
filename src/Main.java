@@ -20,6 +20,8 @@ public class Main {
         System.out.println(myPaciente.getWeight());
         myPaciente.setHeight(30.50);
         System.out.println(myPaciente.getHeight());
+        myPaciente.setPhoneNumber("31584077");
+        System.out.println(myPaciente.getPhoneNumber());
 
 
         //Paciente myPaciente2 = new Paciente(25.70, 50.50);

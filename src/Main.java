@@ -39,6 +39,10 @@ public class Main {
         System.out.println(myPaciente.getName());
         System.out.println(myPaciente.getName());
 
+        myPaciente.setName("Alice");
+        System.out.println(myPaciente2.getName());
+        System.out.println(myPaciente.getName());
+
         //Paciente myPaciente2 = new Paciente(25.70, 50.50);
         //System.out.println(myPaciente2.weight);
         //System.out.println(myPaciente2.height);

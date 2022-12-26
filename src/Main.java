@@ -9,7 +9,11 @@ public class Main {
         Doctor myDoctorAlejo = new Doctor();
         myDoctor.showId();
 
-        showMenu();
+        //showMenu();
+
+        Doctor myDoctor2 = new Doctor("Clemo", "Pediatria");
+        System.out.println(myDoctor2.name);
+        System.out.println(myDoctor2.speciality);
 
 
 

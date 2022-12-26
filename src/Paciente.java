@@ -1,23 +1,22 @@
 public class Paciente {
-    static int id;
     String name;
-    String description;
+    String email;
+    String address;
+    String phoneNumber;
+    String birthday;
+    double weight;
+    double height;
+    String blood;
 
-    //Comportamientos
-    Paciente() {
-        System.out.println("Creando un nuevo paciente...");
-        id++;
-    }
+    Paciente(String name, String email) {
+        this.name = name;
+        this.email = email;
+    };
 
-    public void showId() {
-        System.out.println("El id de el o la paciente es: " + id);
-    }
-    public void showName() {
-        System.out.println(name);
-    }
-    public void showDescription() {
-        System.out.println(description);
-    }
+    Paciente(double weight, double height){
+        this.weight = weight;
+        this.height = height;
+    };
 
 
 }

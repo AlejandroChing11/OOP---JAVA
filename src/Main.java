@@ -15,6 +15,15 @@ public class Main {
         System.out.println(myDoctor2.name);
         System.out.println(myDoctor2.speciality);
 
+        Paciente myPaciente = new Paciente("Alejandro Ching", "alejandroching2004@hotmail.com");
+        System.out.println(myPaciente.name);
+        System.out.println(myPaciente.email);
+
+        Paciente myPaciente2 = new Paciente(25.70, 50.50);
+        System.out.println(myPaciente2.weight);
+        System.out.println(myPaciente2.height);
+
+
 
 
     }

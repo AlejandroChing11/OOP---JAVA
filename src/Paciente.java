@@ -30,9 +30,25 @@ public class Paciente extends User{
         this.height = height;
     };
 
+    public String getBirthday() {
+        return birthday;
+    }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
 
+    public String getBlood() {
+        return blood;
+    }
+
+    public void setBlood(String blood) {
+        this.blood = blood;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nAge: " + birthday + "\n Weight: " + getWeight() + "\n Height: " + getHeight() + "\nBlood: " + blood;
     }
 
     //Paciente(double weight, double height){

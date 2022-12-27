@@ -9,6 +9,7 @@ public class Paciente extends User{
 
     Paciente(String name, String email) {
         super(name, email);
+        //Mas comportamientos
     };
 
     public void setWeight(double weight) {

@@ -4,6 +4,8 @@ public class Doctor {
     static int id = 0; //Auto increment
     private String name;
     private String email;
+    private String address;
+    private String phoneNumber;
     private String speciality;
 
 

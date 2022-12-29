@@ -1,6 +1,8 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
-public class Doctor extends User{
+public class Doctor extends User {
     //Unique Atribute
     private String speciality;
 

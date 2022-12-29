@@ -1,4 +1,6 @@
-public class Paciente extends User{
+package model;
+
+public class Paciente extends User {
     //Unique identifier
     private String birthday;
     private double weight;
@@ -51,7 +53,7 @@ public class Paciente extends User{
         return super.toString() + "\nAge: " + birthday + "\n Weight: " + getWeight() + "\n Height: " + getHeight() + "\nBlood: " + blood;
     }
 
-    //Paciente(double weight, double height){
+    //model.Paciente(double weight, double height){
         //this.weight = weight;
         //this.height = height;
     //};

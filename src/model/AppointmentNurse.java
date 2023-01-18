@@ -5,7 +5,6 @@ public class AppointmentNurse implements ISchedulable {
     private int id;
     private Nurse nurse;
     private Paciente paciente;
-    private Doctor doctor;
     private Date date;
     private String time;
 
@@ -33,13 +32,6 @@ public class AppointmentNurse implements ISchedulable {
         this.paciente = paciente;
     }
 
-    public Doctor getDoctor() {
-        return doctor;
-    }
-
-    public void setDoctor(Doctor doctor) {
-        this.doctor = doctor;
-    }
 
     public Date getDate() {
         return date;

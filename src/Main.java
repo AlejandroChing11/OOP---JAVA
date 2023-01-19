@@ -1,4 +1,5 @@
 import model.Doctor;
+import model.ISchedulable;
 import model.Paciente;
 import model.User;
 
@@ -25,6 +26,13 @@ public class Main {
         };
 
         user1.showDataUser();
+
+        ISchedulable iSchedulable = new ISchedulable() {
+            @Override
+            public void schedule(Date date, String time) {
+
+            }
+        };
 
         /*for (Doctor.AvailableAppointment availableAppointment : myDoctor.getAvailableAppointments()) {
             System.out.println(availableAppointment.getDate() + " " + availableAppointment.getTime());

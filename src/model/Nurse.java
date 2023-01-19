@@ -14,4 +14,10 @@ public class Nurse extends User{
     public void setSpeciality(String speciality) {
         Speciality = speciality;
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del hospital: Cruz Verde");
+        System.out.println("Departamentos: Nutrición, Pediatria");
+    }
 }

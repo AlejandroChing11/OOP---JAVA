@@ -15,6 +15,17 @@ public class Main {
         User user = new Doctor("Alejandro", "alejandro@hotmail.com");
         user.showDataUser();
 
+        User user1 = new User("Alejandro", "alejandro@hotmail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor");
+                System.out.println("Hospital Cruz Verde");
+                System.out.println("Departamento de pediatria");
+            }
+        };
+
+        user1.showDataUser();
+
         /*for (Doctor.AvailableAppointment availableAppointment : myDoctor.getAvailableAppointments()) {
             System.out.println(availableAppointment.getDate() + " " + availableAppointment.getTime());
         }*/

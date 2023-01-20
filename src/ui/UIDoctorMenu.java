@@ -31,7 +31,36 @@ public class UIDoctorMenu {
     }
 
     private static void showAddAvailableAppointmentsMenu(){
-        
+        int response = 0;
+        do {
+            System.out.println("");
+            System.out.println(":: Add Available Appointment");
+            System.out.println(":: Select a month");
+
+            for (int i = 0; i < 3; i++) {
+                int j = i + 1;
+                System.out.println(j + ". " + UIMenu.MONTHS[i]);
+            }
+            System.out.println("0. Return");
+
+            Scanner sc = new Scanner(System.in);
+            response = Integer.valueOf(sc.nextLine());
+
+            if (response > 0 && response < 4) {
+                //1, 2 and 3
+                int monthSelected = response;
+                System.out.println(monthSelected + ". " + UIMenu.MONTHS[monthSelected]);
+                System.out.println("Insert the date avilable: [dd/mm/yyyy]");
+                String date = sc.nextLine();
+
+                System.out.println("Your date is: " + date + "\n1. Correct \n2. Change date");
+
+
+            } else if (response == 0) {
+                showDoctorMenu();
+            }
+
+        } while (response != 0);
     }
 
 }

@@ -108,6 +108,8 @@ public class UIMenu {
                         emailCorrect = true;
                         //Obtener el usuario logeado
                         pacienteLogged = p;
+                        //showPacienteMenu;
+                        showPatientMenu();
                     }
                 }
 

@@ -2,6 +2,8 @@ package model;
 
 import java.util.ArrayList;
 import java.util.Date;
+import  java.text.ParseException;
+import java.text.SimpleDateFormat;
 public class Doctor extends User {
     //Unique Atribute
     private String speciality;
@@ -9,6 +11,7 @@ public class Doctor extends User {
     public Doctor(String name, String email){
         super(name, email);
         System.out.println("El nombre del doctor asignado es: " + name);
+        this.speciality = speciality;
     }
 
     public String getSpeciality() {
@@ -26,8 +29,8 @@ public class Doctor extends User {
 
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
-    public void addAvailableAppointment(Date date, String time) {
-        availableAppointments.add(new AvailableAppointment(date, time));
+    public void addAvailableAppointment(String date, String time) {
+        availableAppointments.add(new Doctor.AvailableAppointment(date, time));
     }
 
     public ArrayList<AvailableAppointment> getAvailableAppointments() {
@@ -46,25 +49,34 @@ public class Doctor extends User {
     }
 
     public static class AvailableAppointment {
-        private int id_aviableAppointment;
+        private int id;
         private Date date;
         private String time;
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
-        public AvailableAppointment(Date date, String time) {
-            this.date = date;
+        public AvailableAppointment(String date, String time) {
+            try {
+                this.date = format.parse(date);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
             this.time = time;
         }
 
-        public int getId_aviableAppointment() {
-            return id_aviableAppointment;
+        public int getId() {
+            return id;
         }
 
-        public void setId_aviableAppointment(int id_aviableAppointment) {
-            this.id_aviableAppointment = id_aviableAppointment;
+        public void setId(int id) {
+            this.id = id;
         }
 
         public Date getDate() {
             return date;
+        }
+
+        public String getDate(String DATE) {
+            return format.format(date);
         }
 
         public void setDate(Date date) {

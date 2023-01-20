@@ -10,7 +10,7 @@ public class UIDoctorMenu {
             System.out.println("Doctor");
             System.out.println("Welcome" + UIMenu.doctorLogged.getName());
             System.out.println("1. Add Available Appointment");
-            System.out.println("2. My Scheduled appointment");
+            System.out.println("2. My Scheduled appointments");
             System.out.println("0. Logout");
 
             Scanner sc = new Scanner(System.in);
@@ -54,6 +54,19 @@ public class UIDoctorMenu {
                 String date = sc.nextLine();
 
                 System.out.println("Your date is: " + date + "\n1. Correct \n2. Change date");
+                int reponseDate = Integer.valueOf(sc.nextLine());
+                if (reponseDate == 2) continue;
+
+                int responseTime = 0;
+                String time = "";
+                do {
+                    System.out.println("Insert the Time Avilable for date:" + date + "[16:00]");
+                    time = sc.nextLine();
+                    System.out.println("Your time is: " + time + "\n1. Correct \n2. Change Time");
+                    responseTime = Integer.valueOf(sc.nextLine());
+                } while (responseTime == 2);
+
+                UIMenu.doctorLogged.addAvailableAppointment(date, time);
 
 
             } else if (response == 0) {

@@ -51,7 +51,7 @@ public class UIDoctorMenu {
             if (response > 0 && response < 4) {
                 //1, 2 and 3
                 int monthSelected = response;
-                System.out.println(monthSelected + ". " + UIMenu.MONTHS[monthSelected]);
+                System.out.println(monthSelected + ". " + UIMenu.MONTHS[monthSelected - 1]);
                 System.out.println("Insert the date avilable: [dd/mm/yyyy]");
                 String date = sc.nextLine();
 
